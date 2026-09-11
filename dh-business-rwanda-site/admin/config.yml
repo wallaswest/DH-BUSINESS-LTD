@@ -1,0 +1,27 @@
+backend:
+  name: git-gateway
+  branch: main
+
+# Where uploaded photos are stored in the site, and the URL path used to reach them
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "news"
+    label: "News & Updates"
+    files:
+      - file: "content/news.json"
+        label: "News & Updates"
+        name: "news"
+        fields:
+          - label: "Posts"
+            name: "items"
+            widget: "list"
+            label_singular: "Post"
+            summary: "{{fields.title}} — {{fields.date}}"
+            fields:
+              - { label: "Date", name: "date", widget: "datetime", format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false, picker_utc: true }
+              - { label: "Tag", name: "tag", widget: "select", options: ["Company update", "Notice"] }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Photo", name: "image", widget: "image", required: false, hint: "Landscape photos work best, roughly 480x330px." }
+              - { label: "Description", name: "body", widget: "text" }

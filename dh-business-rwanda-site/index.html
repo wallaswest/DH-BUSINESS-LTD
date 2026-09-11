@@ -1,0 +1,1217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DH Business Rwanda Ltd — Public &amp; Private Tender Supplier</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%2314304C' stroke='%23A97A2E' stroke-width='3'/%3E%3Ctext x='32' y='41' font-family='Georgia,serif' font-size='24' font-weight='700' fill='%23F6F4EF' text-anchor='middle'%3EDH%3C/text%3E%3C/svg%3E">
+<script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy-deep: #14304C;
+    --navy-mid: #1E4568;
+    --steel: #5480A3;
+    --steel-pale: #DCE6ED;
+    --brass: #A97A2E;
+    --brass-dark: #8A6222;
+    --paper: #F6F4EF;
+    --paper-warm: #EFEBE1;
+    --ink: #1A2430;
+    --ink-soft: #3F4C58;
+    --line: #CBD4DB;
+    --white: #FFFFFF;
+  }
+
+  *{ box-sizing: border-box; }
+  html{ scroll-behavior: smooth; }
+  body{
+    margin:0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'IBM Plex Sans', -apple-system, sans-serif;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1,h2,h3{
+    font-family: 'Source Serif 4', Georgia, serif;
+    color: var(--navy-deep);
+    margin: 0 0 .4em 0;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+  }
+  p{ margin: 0 0 1em 0; color: var(--ink-soft); }
+  a{ color: inherit; }
+  img{ max-width:100%; display:block; }
+  @media (prefers-reduced-motion: reduce){
+    *{ animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; scroll-behavior: auto !important; }
+  }
+
+  /* ---------- Skip link / focus ---------- */
+  a:focus-visible, button:focus-visible{
+    outline: 3px solid var(--brass);
+    outline-offset: 2px;
+  }
+  .skip-link{
+    position: fixed;
+    top: -60px; left: 12px;
+    z-index: 200;
+    background: var(--navy-deep);
+    color: var(--white);
+    padding: 10px 18px;
+    border-radius: 3px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: top .2s ease;
+  }
+  .skip-link:focus{ top: 12px; }
+
+  /* ---------- Scroll progress ---------- */
+  .scroll-progress{
+    position: fixed;
+    top: 0; left: 0;
+    height: 3px;
+    width: 0%;
+    background: var(--brass);
+    z-index: 100;
+    transition: width .1s linear;
+  }
+
+  /* ---------- Top utility bar ---------- */
+  .utility-bar{
+    background: var(--navy-deep);
+    color: #CBDAE6;
+    font-size: 0.82rem;
+    padding: 7px 0;
+  }
+  .utility-inner{
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 28px;
+    display:flex;
+    flex-wrap: wrap;
+    gap: 6px 22px;
+    justify-content: space-between;
+  }
+  .utility-inner span{ white-space: nowrap; }
+  .utility-inner a{ text-decoration:none; color:#CBDAE6; }
+  .utility-inner a:hover{ color:#fff; }
+
+  /* ---------- Header / nav ---------- */
+  header.site{
+    background: var(--white);
+    border-bottom: 1px solid var(--line);
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    box-shadow: 0 0 0 rgba(20,48,76,0);
+    transition: box-shadow .25s ease;
+  }
+  header.site.is-scrolled{
+    box-shadow: 0 6px 18px rgba(20,48,76,0.10);
+  }
+  .nav-inner{
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 16px 28px;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    gap: 24px;
+    transition: padding .25s ease;
+  }
+  header.site.is-scrolled .nav-inner{ padding: 10px 28px; }
+  .brand{
+    display:flex;
+    align-items:center;
+    gap: 12px;
+    text-decoration:none;
+  }
+  .brand-mark{
+    width: 46px; height:46px;
+    border-radius: 50%;
+    background: var(--navy-deep);
+    color: var(--paper);
+    display:flex; align-items:center; justify-content:center;
+    font-family: 'Source Serif 4', serif;
+    font-weight: 700;
+    font-size: 1.15rem;
+    flex-shrink:0;
+    border: 2px solid var(--brass);
+  }
+  .brand-text{ line-height: 1.15; }
+  .brand-text .name{
+    font-family: 'Source Serif 4', serif;
+    font-weight: 700;
+    font-size: 1.12rem;
+    color: var(--navy-deep);
+    letter-spacing: -0.01em;
+  }
+  .brand-text .tag{
+    font-size: 0.72rem;
+    color: var(--steel);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+  nav.primary{
+    display:flex;
+    gap: 6px;
+  }
+  nav.primary button{
+    position: relative;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 500;
+    background: none;
+    border: none;
+    color: var(--ink-soft);
+    padding: 10px 14px;
+    cursor:pointer;
+    border-bottom: 2px solid transparent;
+    transition: color .15s ease, border-color .15s ease;
+  }
+  nav.primary button::after{
+    content: "";
+    position: absolute;
+    left: 14px; right: 14px;
+    bottom: -2px;
+    height: 2px;
+    background: var(--steel);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .2s ease;
+  }
+  nav.primary button:hover{ color: var(--navy-deep); }
+  nav.primary button:hover::after{ transform: scaleX(1); }
+  nav.primary button[aria-current="page"]{
+    color: var(--navy-deep);
+    border-bottom-color: var(--brass);
+    font-weight: 600;
+  }
+  nav.primary button[aria-current="page"]::after{ content: none; }
+  .nav-toggle{
+    display:none;
+    background:none;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    width: 42px; height: 38px;
+    cursor:pointer;
+    color: var(--navy-deep);
+  }
+
+  @media (max-width: 760px){
+    nav.primary{
+      display:flex;
+      position:absolute;
+      top: 100%;
+      left:0; right:0;
+      background: var(--white);
+      border-bottom: 1px solid var(--line);
+      flex-direction: column;
+      padding: 0 20px;
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      transition: max-height .28s ease, opacity .2s ease, padding .28s ease;
+    }
+    nav.primary.open{ max-height: 260px; opacity: 1; padding: 8px 20px 16px; }
+    .nav-toggle{ display:block; }
+    nav.primary button{ text-align:left; padding: 12px 4px; }
+    nav.primary button::after{ display:none; }
+  }
+
+  /* ---------- Page sections ---------- */
+  main{ display:block; }
+  .page{ display:none; }
+  .page.active{ display:block; }
+
+  .section{ padding: 72px 28px; }
+  .section-inner{ max-width: 1120px; margin: 0 auto; }
+  .section-narrow{ max-width: 760px; margin: 0 auto; }
+
+  .eyebrow{
+    color: var(--brass-dark);
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  /* ---------- Hero ---------- */
+  .hero{
+    background: linear-gradient(180deg, var(--navy-deep) 0%, var(--navy-mid) 100%);
+    color: var(--paper);
+    padding: 88px 28px 96px;
+  }
+  .hero-inner{
+    max-width: 1120px;
+    margin: 0 auto;
+    display:grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 56px;
+    align-items:center;
+  }
+  @keyframes heroRise{
+    from{ opacity: 0; transform: translateY(16px); }
+    to{ opacity: 1; transform: translateY(0); }
+  }
+  .hero-inner > *{
+    opacity: 0;
+    animation: heroRise .7s ease forwards;
+  }
+  .hero-inner > *:nth-child(1){ animation-delay: .05s; }
+  .hero-inner > *:nth-child(2){ animation-delay: .2s; }
+  .hero h1{
+    color: var(--white);
+    font-size: clamp(2.1rem, 4vw, 3.1rem);
+    line-height: 1.12;
+    max-width: 15ch;
+  }
+  .hero .lede{
+    color: #C3D4E1;
+    font-size: 1.08rem;
+    max-width: 46ch;
+    margin-bottom: 1.6em;
+  }
+  .cta-row{ display:flex; gap: 14px; flex-wrap: wrap; }
+  .btn{
+    display:inline-block;
+    padding: 13px 24px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    border-radius: 3px;
+    text-decoration:none;
+    cursor:pointer;
+    border: 1px solid transparent;
+    font-family: inherit;
+    transition: background-color .18s ease, border-color .18s ease, transform .18s ease, box-shadow .18s ease;
+  }
+  .btn-brass{
+    background: var(--brass);
+    color: var(--navy-deep);
+  }
+  .btn-brass:hover{ background: #BE8B37; transform: translateY(-2px); box-shadow: 0 8px 18px rgba(138,98,34,0.28); }
+  .btn-outline{
+    background: transparent;
+    color: var(--white);
+    border-color: rgba(255,255,255,0.5);
+  }
+  .btn-outline:hover{ border-color: #fff; transform: translateY(-2px); }
+  .btn:active{ transform: translateY(0); }
+
+  .hero-panel{
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.18);
+    border-radius: 4px;
+    padding: 28px 26px;
+  }
+  .hero-panel dl{ margin:0; display:grid; gap: 18px; }
+  .hero-panel .stat-num{
+    font-family: 'Source Serif 4', serif;
+    font-size: 2rem;
+    color: var(--white);
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+  }
+  .hero-panel .stat-label{
+    font-size: 0.82rem;
+    color: #B9CBDA;
+  }
+  .hero-panel .divider{ border-top: 1px solid rgba(255,255,255,0.15); }
+
+  /* ---------- Category grid ---------- */
+  .cat-head{ text-align:left; margin-bottom: 40px; max-width: 620px; }
+  .cat-grid{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-top: 1px solid var(--line);
+    border-left: 1px solid var(--line);
+  }
+  .cat-item{
+    border-right: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    padding: 30px 20px;
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap: 14px;
+    position: relative;
+    transition: background-color .2s ease;
+  }
+  .cat-item:hover{ background: var(--white); }
+  .cat-icon{
+    width: 52px; height:52px;
+    border-radius: 50%;
+    border: 1.5px solid var(--steel);
+    display:flex; align-items:center; justify-content:center;
+    color: var(--navy-mid);
+    transition: background-color .2s ease, color .2s ease, transform .2s ease;
+  }
+  .cat-item:hover .cat-icon{
+    background: var(--navy-deep);
+    border-color: var(--navy-deep);
+    color: var(--paper);
+    transform: translateY(-3px);
+  }
+  .cat-icon svg{ width:24px; height:24px; }
+  .cat-item h3{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--navy-deep);
+    margin:0;
+  }
+  @media (max-width: 860px){
+    .cat-grid{ grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 480px){
+    .cat-grid{ grid-template-columns: 1fr; }
+  }
+
+  /* ---------- Strip / quote ---------- */
+  .strip{
+    background: var(--paper-warm);
+    padding: 46px 28px;
+    text-align:center;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+  }
+  .strip p{
+    font-family: 'Source Serif 4', serif;
+    font-style: italic;
+    font-size: 1.3rem;
+    color: var(--navy-deep);
+    margin:0;
+  }
+
+  /* ---------- Two column ---------- */
+  .two-col{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 56px;
+    align-items:start;
+  }
+  @media (max-width: 760px){ .two-col{ grid-template-columns: 1fr; } }
+
+  .info-list{ list-style:none; margin:0; padding:0; display:grid; gap: 14px; }
+  .info-list li{
+    padding-left: 26px;
+    position: relative;
+    color: var(--ink-soft);
+  }
+  .info-list li::before{
+    content: "";
+    position:absolute;
+    left:0; top: 8px;
+    width: 9px; height:9px;
+    background: var(--brass);
+  }
+
+  .card{
+    background: var(--white);
+    border: 1px solid var(--line);
+    padding: 28px 26px;
+  }
+
+  .num-block{ display:flex; gap:18px; align-items:flex-start; margin-bottom: 26px; }
+  .num-block .num{
+    font-family:'Source Serif 4', serif;
+    font-size: 1.5rem;
+    color: var(--brass-dark);
+    font-weight: 600;
+    flex-shrink:0;
+    width: 2ch;
+  }
+  .num-block h3{ font-size: 1.05rem; margin-bottom: 4px; }
+  .num-block p{ margin:0; }
+
+  /* ---------- Contact ---------- */
+  .contact-grid{
+    display:grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 48px;
+  }
+  @media (max-width: 760px){ .contact-grid{ grid-template-columns: 1fr; } }
+  .contact-detail{ display:flex; gap:14px; margin-bottom: 22px; align-items:flex-start; }
+  .contact-detail .ic{
+    width: 38px; height:38px; border-radius:50%;
+    background: var(--steel-pale); color: var(--navy-deep);
+    display:flex; align-items:center; justify-content:center;
+    flex-shrink:0;
+  }
+  .contact-detail .ic svg{ width:18px; height:18px; }
+  .contact-detail h3{ font-size: 0.98rem; margin-bottom: 2px; }
+  .contact-detail p{ margin:0; }
+
+  form.contact-form{ display:grid; gap: 16px; }
+  .form-row{ display:grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  @media (max-width: 520px){ .form-row{ grid-template-columns: 1fr; } }
+  label{
+    display:block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--navy-deep);
+    margin-bottom: 6px;
+  }
+  input, textarea{
+    width:100%;
+    font-family: inherit;
+    font-size: 0.95rem;
+    padding: 11px 12px;
+    border: 1px solid var(--line);
+    background: var(--white);
+    color: var(--ink);
+    border-radius: 2px;
+  }
+  input, textarea{ transition: border-color .15s ease, box-shadow .15s ease; }
+  input:focus, textarea:focus{
+    outline: none;
+    border-color: var(--steel);
+    box-shadow: 0 0 0 3px rgba(84,128,163,0.18);
+  }
+  textarea{ resize: vertical; min-height: 120px; }
+  .btn[disabled]{
+    opacity: 0.75;
+    cursor: progress;
+  }
+  .btn.is-loading{
+    position: relative;
+    color: transparent !important;
+  }
+  .btn.is-loading::after{
+    content: "";
+    position: absolute;
+    left: 50%; top: 50%;
+    width: 16px; height: 16px;
+    margin: -8px 0 0 -8px;
+    border: 2px solid rgba(20,48,76,0.35);
+    border-top-color: var(--navy-deep);
+    border-radius: 50%;
+    animation: btnSpin .6s linear infinite;
+  }
+  @keyframes btnSpin{ to{ transform: rotate(360deg); } }
+  .form-note{
+    font-size: 0.82rem;
+    color: var(--ink-soft);
+    margin-top: -4px;
+  }
+
+  /* ---------- News ---------- */
+  .news-list{ display:grid; gap: 0; border-top: 1px solid var(--line); }
+  .news-item{
+    padding: 28px 0;
+    border-bottom: 1px solid var(--line);
+    display:grid;
+    grid-template-columns: 160px 1fr;
+    gap: 24px;
+  }
+  @media (max-width: 600px){ .news-item{ grid-template-columns: 1fr; gap: 12px; } }
+  .news-photo-wrap{
+    width: 160px;
+    height: 110px;
+    overflow: hidden;
+    border: 1px solid var(--line);
+    background: var(--paper-warm);
+  }
+  @media (max-width: 600px){ .news-photo-wrap{ width: 100%; height: 180px; } }
+  .news-photo{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display:block;
+    transition: transform .35s ease;
+  }
+  .news-item:hover .news-photo{ transform: scale(1.06); }
+  .news-date{
+    font-size: 0.82rem;
+    color: var(--steel);
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    display: block;
+    margin-bottom: 8px;
+  }
+  .news-item h3{ font-size: 1.08rem; margin-bottom: 6px; }
+  .news-tag{
+    display:inline-block;
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: var(--brass-dark);
+    background: var(--paper-warm);
+    border: 1px solid var(--line);
+    padding: 2px 9px;
+    margin-bottom: 8px;
+  }
+
+  /* ---------- Footer ---------- */
+  footer.site{
+    background: var(--navy-deep);
+    color: #C3D4E1;
+  }
+  .footer-main{
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 52px 28px 34px;
+    display:grid;
+    grid-template-columns: 1.3fr 1fr 1fr;
+    gap: 40px;
+  }
+  @media (max-width: 720px){ .footer-main{ grid-template-columns: 1fr; } }
+  .footer-main h3{
+    color: var(--white);
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 0.92rem;
+    font-weight: 600;
+    margin-bottom: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  .footer-main p, .footer-main a{
+    color: #B9CBDA;
+    font-size: 0.92rem;
+    text-decoration:none;
+  }
+  .footer-main a:hover{ color: #fff; }
+  .footer-links{ list-style:none; margin:0; padding:0; display:grid; gap:10px; }
+  .footer-bar{
+    border-top: 1px solid rgba(255,255,255,0.14);
+    padding: 18px 28px;
+    max-width: 1120px;
+    margin: 0 auto;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    gap: 10px;
+    font-size: 0.8rem;
+    color: #8FA7BA;
+  }
+
+  .page-hero{
+    background: var(--navy-deep);
+    color: var(--paper);
+    padding: 56px 28px;
+  }
+  .page-hero-inner{ max-width: 1120px; margin:0 auto; }
+  .page-hero h1{ color: var(--white); font-size: clamp(1.8rem, 3vw, 2.4rem); margin-bottom: 10px; }
+  .page-hero p{ color: #C3D4E1; max-width: 60ch; margin:0; }
+
+  /* ---------- Scroll reveal ---------- */
+  .reveal{
+    opacity: 0;
+    transform: translateY(22px);
+    transition: opacity .6s ease, transform .6s ease;
+  }
+  .reveal.is-visible{
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* ---------- Page switch transition ---------- */
+  .page.active{ animation: pageFade .4s ease; }
+  @keyframes pageFade{
+    from{ opacity: 0; transform: translateY(8px); }
+    to{ opacity: 1; transform: translateY(0); }
+  }
+
+  /* ---------- Back to top ---------- */
+  .to-top{
+    position: fixed;
+    right: 22px;
+    bottom: 22px;
+    width: 46px; height: 46px;
+    border-radius: 50%;
+    background: var(--navy-deep);
+    color: var(--paper);
+    border: none;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    cursor:pointer;
+    opacity: 0;
+    transform: translateY(12px);
+    pointer-events: none;
+    transition: opacity .25s ease, transform .25s ease, background-color .2s ease;
+    z-index: 60;
+    box-shadow: 0 8px 20px rgba(20,48,76,0.28);
+  }
+  .to-top.visible{ opacity: 1; transform: translateY(0); pointer-events: auto; }
+  .to-top:hover{ background: var(--navy-mid); }
+  .to-top svg{ width:20px; height:20px; }
+</style>
+</head>
+<body>
+
+<a href="#main-content" class="skip-link">Skip to content</a>
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<div class="utility-bar">
+  <div class="utility-inner">
+    <span>KN 1 Rd 48, Muhima, Kigali, Rwanda</span>
+    <span><a href="tel:+250784174422">Tel: 0784 174 422</a> &nbsp;|&nbsp; <a href="mailto:dhbusinessrwandaltd@gmail.com">dhbusinessrwandaltd@gmail.com</a></span>
+  </div>
+</div>
+
+<header class="site">
+  <div class="nav-inner">
+    <a href="#" class="brand" onclick="goTo('home');return false;">
+      <span class="brand-mark">DH</span>
+      <span class="brand-text">
+        <span class="name">DH Business Rwanda Ltd</span><br>
+        <span class="tag">Tender Supplier</span>
+      </span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+    <nav class="primary" id="primaryNav">
+      <button data-page="home" aria-current="page" onclick="goTo('home')">Home</button>
+      <button data-page="about" onclick="goTo('about')">About</button>
+      <button data-page="news" onclick="goTo('news')">News</button>
+      <button data-page="contact" onclick="goTo('contact')">Contact</button>
+    </nav>
+  </div>
+</header>
+
+<main id="main-content">
+
+  <!-- ============ HOME ============ -->
+  <section class="page active" id="page-home">
+    <div class="hero">
+      <div class="hero-inner">
+        <div>
+          <h1>Reliable supply. On‑time delivery. Trusted nationwide.</h1>
+          <p class="lede">DH Business Rwanda Ltd supplies goods and non‑consultant works for public and private sector tenders across Rwanda — from food and medical supplies to construction materials and furniture.</p>
+          <div class="cta-row">
+            <a href="#" class="btn btn-brass" onclick="goTo('contact');return false;">Request a quote</a>
+            <a href="#" class="btn btn-outline" onclick="goTo('about');return false;">About the company</a>
+          </div>
+        </div>
+        <div class="hero-panel">
+          <dl>
+            <div>
+              <div class="stat-num">8</div>
+              <div class="stat-label">Supply categories covered</div>
+            </div>
+            <div class="divider"></div>
+            <div>
+              <div class="stat-num">Kigali</div>
+              <div class="stat-label">Headquartered, delivering nationwide</div>
+            </div>
+            <div class="divider"></div>
+            <div>
+              <div class="stat-num">Public &amp; Private</div>
+              <div class="stat-label">Sector tenders fulfilled</div>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-inner reveal">
+        <div class="cat-head">
+          <p class="eyebrow">What we supply</p>
+          <h2>Eight categories, one dependable supplier</h2>
+          <p>We fulfil tenders across the following goods and works categories, sourcing quality materials and coordinating logistics so procurement teams can rely on a single point of contact.</p>
+        </div>
+        <div class="cat-grid">
+
+          <div class="cat-item">
+            <div class="cat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M8 2v6M8 2c-1.5 0-2 1-2 2.5S8 8 8 8M16 2v20M6 8v14"/></svg></div>
+            <h3>Food &amp; Catering</h3>
+          </div>
+
+          <div class="cat-item">
+            <div class="cat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 20l8-16 2 2-16 8-2-2z"/><path d="M4 20l3-6 3 3-6 3z"/></svg></div>
+            <h3>Stationery</h3>
+          </div>
+
+          <div class="cat-item">
+            <div class="cat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><ellipse cx="12" cy="13" rx="8" ry="6"/><circle cx="7" cy="9" r="1.4"/><path d="M12 7v-3"/></svg></div>
+            <h3>Biological Assets</h3>
+          </div>
+
+          <div class="cat-item">
+            <div class="cat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v10M7 12h10"/></svg></div>
+            <h3>Medical &amp; Vet Supplies</h3>
+          </div>
+
+          <div class="cat-item">
+            <div class="cat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3v6M12 9c-3 0-4 2-4 5M12 9c3 0 4 2 4 5M8 14h8v4a1 1 0 01-1 1H9a1 1 0 01-1-1v-4z"/></svg></div>
+            <h3>Agricultural Inputs</h3>
+          </div>
+
+          <div class="cat-item">
+            <div class="cat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="10" width="18" height="4"/><rect x="6" y="14" width="12" height="3"/><rect x="9" y="6" width="6" height="4"/></svg></div>
+            <h3>Construction Materials</h3>
+          </div>
+
+          <div class="cat-item">
+            <div class="cat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 18v-6a2 2 0 012-2h12a2 2 0 012 2v6M4 18h16M4 15h16M6 10V6h4v4"/></svg></div>
+            <h3>Furniture</h3>
+          </div>
+
+          <div class="cat-item">
+            <div class="cat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 12a8 4 0 0016 0"/><path d="M12 4v4"/></svg></div>
+            <h3>Kitchen Materials</h3>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="strip">
+      <p>&ldquo;If you need reliable business supply in Rwanda, kindly contact DH Business Rwanda.&rdquo;</p>
+    </div>
+
+    <div class="section">
+      <div class="section-inner two-col reveal">
+        <div>
+          <p class="eyebrow">Why procurement teams work with us</p>
+          <h2>Built around what a tender needs</h2>
+          <p>Winning a tender is only the start — fulfilling it on the agreed terms is what earns repeat business. We structure our operations around the requirements procuring entities actually check.</p>
+        </div>
+        <ul class="info-list">
+          <li>Registered supplier for public and private sector procurement in Rwanda</li>
+          <li>Coverage across eight goods and non‑consultant works categories</li>
+          <li>Direct coordination on delivery timelines and site access</li>
+          <li>Single point of contact for quotations, samples, and after‑delivery queries</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="page" id="page-about">
+    <div class="page-hero">
+      <div class="page-hero-inner">
+        <p class="eyebrow" style="color:#DDBB74;">About us</p>
+        <h1>A dependable supply partner for Rwanda's tenders</h1>
+        <p>DH Business Rwanda Ltd is a Kigali‑based company supplying goods and non‑consultant works to public and private sector organisations through the tender process.</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-inner two-col reveal">
+        <div>
+          <h2>What we do</h2>
+          <p>We respond to tenders and direct procurement requests across eight core categories — food and catering, stationery, biological assets, medical and veterinary supplies, agricultural inputs, construction materials, furniture, and kitchen materials.</p>
+          <p>Rather than specialising narrowly, we've built relationships with suppliers and transporters across these categories so that institutions can source multiple requirements through one registered, accountable company instead of managing several vendors.</p>
+          <h2>How we work</h2>
+          <p>Every tender we take on is assessed against our ability to deliver on the specification, quantity, and timeline requested — we do not bid on requirements we cannot fulfil to standard.</p>
+        </div>
+        <div class="card">
+          <div class="num-block">
+            <span class="num">01</span>
+            <div>
+              <h3>Quotation &amp; specification review</h3>
+              <p>We confirm requirements, quantities and delivery terms before submitting a bid or quote.</p>
+            </div>
+          </div>
+          <div class="num-block">
+            <span class="num">02</span>
+            <div>
+              <h3>Sourcing &amp; quality check</h3>
+              <p>Goods are sourced from vetted suppliers and checked against the agreed specification.</p>
+            </div>
+          </div>
+          <div class="num-block">
+            <span class="num">03</span>
+            <div>
+              <h3>Delivery &amp; handover</h3>
+              <p>We coordinate transport and delivery to site, with documentation for procurement records.</p>
+            </div>
+          </div>
+          <div class="num-block" style="margin-bottom:0;">
+            <span class="num">04</span>
+            <div>
+              <h3>After‑delivery support</h3>
+              <p>A direct contact remains available for any follow‑up, replacement or documentation needs.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="strip">
+      <p>Reliable supply. On‑time delivery. Trusted nationwide.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-inner section-narrow reveal">
+        <h2>Company details</h2>
+        <ul class="info-list">
+          <li>Legal name: DH Business Rwanda Ltd</li>
+          <li>Scope: Public &amp; private tender supplier — goods and non‑consultant works</li>
+          <li>Location: KN 1 Rd 48, Muhima, Kigali, Rwanda</li>
+          <li>Registered for tender participation in Rwanda — registration and TIN details provided on request or in bid documentation</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ NEWS ============ -->
+  <section class="page" id="page-news">
+    <div class="page-hero">
+      <div class="page-hero-inner">
+        <p class="eyebrow" style="color:#DDBB74;">News &amp; updates</p>
+        <h1>Company news and tender notices</h1>
+        <p>Updates on recent supply awards, new categories, and notices relevant to our procurement partners.</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-inner section-narrow reveal">
+        <div class="news-list" id="newsList">
+          <p style="color:var(--ink-soft);">Loading updates…</p>
+        </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="page" id="page-contact">
+    <div class="page-hero">
+      <div class="page-hero-inner">
+        <p class="eyebrow" style="color:#DDBB74;">Contact</p>
+        <h1>Get in touch</h1>
+        <p>For quotation requests, tender enquiries or general questions, reach us using the details below or send a message directly.</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-inner contact-grid reveal">
+        <div>
+          <div class="contact-detail">
+            <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s7-6.5 7-12a7 7 0 10-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="9" r="2.4"/></svg></span>
+            <div>
+              <h3>Address</h3>
+              <p>KN 1 Rd 48, Muhima, Kigali, Rwanda</p>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 5h3l2 5-2 1a11 11 0 006 6l1-2 5 2v3a2 2 0 01-2 2A16 16 0 013 7a2 2 0 012-2z"/></svg></span>
+            <div>
+              <h3>Phone</h3>
+              <p><a href="tel:+250784174422">0784 174 422</a></p>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="M3 6l9 7 9-7"/></svg></span>
+            <div>
+              <h3>Email</h3>
+              <p><a href="mailto:dhbusinessrwandaltd@gmail.com">dhbusinessrwandaltd@gmail.com</a></p>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="3" width="16" height="18" rx="1"/><path d="M8 7h8M8 11h8M8 15h5"/></svg></span>
+            <div>
+              <h3>Tender enquiries</h3>
+              <p>Include the tender reference number, quantities and delivery location for the fastest response.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2 style="font-size:1.15rem; margin-bottom:18px;" id="contactFormHeading">Send a message</h2>
+
+          <form class="contact-form" id="contactForm" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" onsubmit="handleSubmit(event)">
+            <input type="hidden" name="form-name" value="contact" />
+            <p style="display:none;">
+              <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+            </p>
+
+            <div class="form-row">
+              <div>
+                <label for="fname">Full name</label>
+                <input type="text" id="fname" name="fname" required>
+              </div>
+              <div>
+                <label for="forg">Organisation</label>
+                <input type="text" id="forg" name="forg">
+              </div>
+            </div>
+            <div class="form-row">
+              <div>
+                <label for="femail">Email</label>
+                <input type="email" id="femail" name="femail" required>
+              </div>
+              <div>
+                <label for="fphone">Phone</label>
+                <input type="tel" id="fphone" name="fphone">
+              </div>
+            </div>
+            <div>
+              <label for="fmsg">Message</label>
+              <textarea id="fmsg" name="fmsg" placeholder="Tell us what you need — including category, quantity and location, if known." required></textarea>
+            </div>
+            <p class="form-note">Sent directly to DH Business Rwanda Ltd.</p>
+            <button type="submit" class="btn btn-brass" id="submitBtn" style="justify-self:start;">Send message</button>
+          </form>
+
+          <div id="formSuccess" style="display:none;">
+            <h2 style="font-size:1.15rem; margin-bottom:10px;">Message sent</h2>
+            <p style="margin:0;">Thanks — your message has been sent to DH Business Rwanda Ltd. We'll get back to you shortly.</p>
+          </div>
+
+          <div id="formError" style="display:none;">
+            <p style="margin:0 0 14px 0; color:var(--ink-soft);">Something went wrong sending the form. You can email us directly instead:</p>
+            <a class="btn btn-outline" style="color:var(--navy-deep); border-color:var(--line);" href="mailto:dhbusinessrwandaltd@gmail.com">Email dhbusinessrwandaltd@gmail.com</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site">
+  <div class="footer-main">
+    <div>
+      <h3>DH Business Rwanda Ltd</h3>
+      <p>Public &amp; private tender supplier of goods and non‑consultant works, based in Kigali and delivering nationwide.</p>
+    </div>
+    <div>
+      <h3>Site</h3>
+      <ul class="footer-links">
+        <li><a href="#" onclick="goTo('home');return false;">Home</a></li>
+        <li><a href="#" onclick="goTo('about');return false;">About</a></li>
+        <li><a href="#" onclick="goTo('news');return false;">News</a></li>
+        <li><a href="#" onclick="goTo('contact');return false;">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Contact</h3>
+      <p>KN 1 Rd 48, Muhima, Kigali, Rwanda</p>
+      <p><a href="tel:+250784174422">0784 174 422</a></p>
+      <p><a href="mailto:dhbusinessrwandaltd@gmail.com">dhbusinessrwandaltd@gmail.com</a></p>
+    </div>
+  </div>
+  <div class="footer-bar">
+    <span>&copy; 2026 DH Business Rwanda Ltd. All rights reserved.</span>
+    <span>Public &amp; Private Tender Supplier — Goods &amp; Non‑Consultant Works</span>
+  </div>
+</footer>
+
+<button class="to-top" id="toTopBtn" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+</button>
+
+<script>
+  function goTo(page){
+    document.querySelectorAll('.page').forEach(function(el){ el.classList.remove('active'); });
+    document.getElementById('page-' + page).classList.add('active');
+    document.querySelectorAll('nav.primary button').forEach(function(btn){
+      if(btn.getAttribute('data-page') === page){
+        btn.setAttribute('aria-current', 'page');
+      } else {
+        btn.removeAttribute('aria-current');
+      }
+    });
+    document.getElementById('primaryNav').classList.remove('open');
+    document.getElementById('navToggle').setAttribute('aria-expanded', 'false');
+    window.scrollTo({top:0, behavior:'smooth'});
+    history.replaceState(null, '', '#' + page);
+  }
+
+  document.getElementById('navToggle').addEventListener('click', function(){
+    var nav = document.getElementById('primaryNav');
+    var open = nav.classList.toggle('open');
+    this.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+
+  function encodeFormData(data) {
+    return Object.keys(data)
+      .map(function(key){ return encodeURIComponent(key) + '=' + encodeURIComponent(data[key]); })
+      .join('&');
+  }
+
+  function handleSubmit(e){
+    e.preventDefault();
+    var f = e.target;
+    var btn = document.getElementById('submitBtn');
+    var data = {
+      'form-name': f['form-name'].value,
+      'fname': f.fname.value,
+      'forg': f.forg.value,
+      'femail': f.femail.value,
+      'fphone': f.fphone.value,
+      'fmsg': f.fmsg.value
+    };
+
+    btn.disabled = true;
+    btn.classList.add('is-loading');
+
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: encodeFormData(data)
+    })
+    .then(function(response){
+      if(response.ok){
+        f.style.display = 'none';
+        document.getElementById('contactFormHeading').style.display = 'none';
+        document.getElementById('formSuccess').style.display = 'block';
+      } else {
+        throw new Error('Form submission failed');
+      }
+    })
+    .catch(function(){
+      document.getElementById('formError').style.display = 'block';
+      btn.disabled = false;
+      btn.classList.remove('is-loading');
+    });
+  }
+
+  (function(){
+    var hash = window.location.hash.replace('#','');
+    var valid = ['home','about','news','contact'];
+    if(valid.indexOf(hash) !== -1){ goTo(hash); }
+  })();
+
+  /* ---------- Scroll progress bar + sticky header shadow + back-to-top ---------- */
+  (function(){
+    var progress = document.getElementById('scrollProgress');
+    var header = document.querySelector('header.site');
+    var toTop = document.getElementById('toTopBtn');
+    var ticking = false;
+
+    function onScroll(){
+      var doc = document.documentElement;
+      var scrollTop = doc.scrollTop || document.body.scrollTop;
+      var height = doc.scrollHeight - doc.clientHeight;
+      var pct = height > 0 ? (scrollTop / height) * 100 : 0;
+      progress.style.width = pct + '%';
+
+      header.classList.toggle('is-scrolled', scrollTop > 8);
+      toTop.classList.toggle('visible', scrollTop > 500);
+      ticking = false;
+    }
+
+    window.addEventListener('scroll', function(){
+      if(!ticking){
+        window.requestAnimationFrame(onScroll);
+        ticking = true;
+      }
+    }, { passive: true });
+
+    toTop.addEventListener('click', function(){
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    onScroll();
+  })();
+
+  /* ---------- Reveal-on-scroll ---------- */
+  (function(){
+    var targets = document.querySelectorAll('.reveal');
+    var i;
+    if(!('IntersectionObserver' in window)){
+      for(i = 0; i < targets.length; i++){ targets[i].classList.add('is-visible'); }
+      return;
+    }
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if(entry.isIntersecting){
+          entry.target.classList.add('is-visible');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+    for(i = 0; i < targets.length; i++){ io.observe(targets[i]); }
+  })();
+
+  /* ---------- Hero stat count-up (runs once) ---------- */
+  (function(){
+    var statEl = document.querySelector('.hero-panel .stat-num');
+    if(!statEl) return;
+    var target = 8;
+    var current = 0;
+    var duration = 900;
+    var start = null;
+
+    function step(ts){
+      if(start === null) start = ts;
+      var progress = Math.min((ts - start) / duration, 1);
+      current = Math.floor(progress * target);
+      statEl.textContent = current;
+      if(progress < 1){
+        window.requestAnimationFrame(step);
+      } else {
+        statEl.textContent = target;
+      }
+    }
+    statEl.textContent = '0';
+    window.requestAnimationFrame(step);
+  })();  /* ---------- Load news from content/news.json (editable via /admin) ---------- */
+  (function(){
+    var list = document.getElementById('newsList');
+    if(!list) return;
+
+    fetch('content/news.json', { cache: 'no-store' })
+      .then(function(res){
+        if(!res.ok) throw new Error('Failed to load news.json');
+        return res.json();
+      })
+      .then(function(data){
+        var items = (data && data.items) ? data.items.slice() : [];
+        if(items.length === 0){
+          list.innerHTML = '<p style="color:var(--ink-soft);">No updates posted yet — check back soon.</p>';
+          return;
+        }
+
+        items.sort(function(a, b){
+          return new Date(b.date) - new Date(a.date);
+        });
+
+        list.innerHTML = '';
+        items.forEach(function(item){
+          var el = document.createElement('div');
+          el.className = 'news-item';
+
+          var photoHTML = '';
+          if(item.image){
+            photoHTML =
+              '<div class="news-photo-wrap"><img class="news-photo" src="' + item.image + '" ' +
+              'alt="' + (item.title || '').replace(/"/g, '&quot;') + '" loading="lazy"></div>';
+          }
+
+          var dateLabel = item.date ? new Date(item.date).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' }) : '';
+
+          el.innerHTML =
+            photoHTML +
+            '<div>' +
+              '<span class="news-date"></span>' +
+              '<span class="news-tag"></span>' +
+              '<h3></h3>' +
+              '<p></p>' +
+            '</div>';
+
+          el.querySelector('.news-date').textContent = dateLabel;
+          el.querySelector('.news-tag').textContent = item.tag || '';
+          el.querySelector('h3').textContent = item.title || '';
+          el.querySelector('p').textContent = item.body || '';
+
+          list.appendChild(el);
+        });
+      })
+      .catch(function(){
+        list.innerHTML = '<p style="color:var(--ink-soft);">Updates couldn\'t be loaded right now. Please check back shortly.</p>';
+      });
+  })();
+
+  /* ---------- Netlify Identity: send invite/recovery links to the admin login ---------- */
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on('init', function (user) {
+      if (!user) {
+        window.netlifyIdentity.on('login', function () {
+          document.location.href = '/admin/';
+        });
+      }
+    });
+  }
+</script>
+
+</body>
+</html>
