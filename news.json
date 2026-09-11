@@ -1,0 +1,25 @@
+{
+  "items": [
+    {
+      "date": "2026-03-10",
+      "tag": "Company update",
+      "title": "DH Business Rwanda Ltd expands supply categories",
+      "image": "images/news-1.jpg",
+      "body": "We've broadened our tender supply capacity to cover eight categories, including biological assets and medical & veterinary supplies, alongside our existing food, stationery, construction and furniture lines."
+    },
+    {
+      "date": "2026-02-18",
+      "tag": "Notice",
+      "title": "Now accepting direct quotation requests",
+      "image": "images/news-2.jpg",
+      "body": "In addition to formal tender submissions, procuring entities and private organisations can now request quotations directly through our contact page for faster turnaround."
+    },
+    {
+      "date": "2026-01-22",
+      "tag": "Company update",
+      "title": "Nationwide delivery coordination in place",
+      "image": "images/news-3.jpg",
+      "body": "Our logistics coordination now covers delivery to sites outside Kigali, supporting institutions procuring goods for facilities across Rwanda."
+    }
+  ]
+}
